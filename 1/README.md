@@ -44,10 +44,18 @@
 ![keepalived.cfg](https://github.com/nataliya-panina/sflt/blob/main/1/keepalived.cfg)  
 
 Отработка скрипта после переименования файла index.html:  
+
 ![Exit1](https://github.com/nataliya-panina/sflt/blob/main/1/exit1.png)  
 
-Переход сервера в активное состояние:  
+И обратно:
+
+![Master_status](https://github.com/nataliya-panina/sflt/blob/main/1/Master.png) 
+
+Переход BACKUP в MASTER и обратно:
+
 ![Backup_status](https://github.com/nataliya-panina/sflt/blob/main/1/Backup.png)  
+
+
 **Дополнительные задания со звёздочкой**
 
 Эти задания дополнительные. Их можно не выполнять. На зачёт это не повлияет. Вы можете их выполнить, если хотите глубже разобраться в материале.
