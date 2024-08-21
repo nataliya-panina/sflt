@@ -13,7 +13,6 @@
     Router1(config)#int g0/1
     Router1(config-if)#standby 1 ip 192.168.1.1 
     Router1(config-if)#standby prio
-    Router1(config-if)#standby priority 105
     Router1(config-if)#standby preempt
     Router1(config-if)#standby 1 track g0/1
 
