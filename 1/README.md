@@ -17,6 +17,7 @@
     Router1(config-if)#standby preempt
     Router1(config-if)#standby 1 track g0/1
 
+![Router1](https://github.com/nataliya-panina/sflt/blob/main/1/Standby1.png)
 
     Router0#en
     Router0#conf t
@@ -25,6 +26,10 @@
     Router0(config-if)# standby 1 ip 192.168.1.1
     Router0(config-if)# standby 1 priority 50
     Router0(config-if)# do sh standby brief
+![Router2](https://github.com/nataliya-panina/sflt/blob/main/1/Standby2.png)
+
+![.pkt](https://github.com/nataliya-panina/sflt/blob/main/1/hsrp_advanced.pkt)
+
 
 ## Задание 2
 
