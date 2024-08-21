@@ -7,7 +7,10 @@
     Для проверки корректности настройки, разорвите один из кабелей между одним из маршрутизаторов и Switch0 и запустите ping между PC0 и Server0.
     На проверку отправьте получившуюся схему в формате pkt и скриншот, где виден процесс настройки маршрутизатора.
 ## Решение
-
+    Router1>en
+    Router1#sh standby brief
+    Router1#conf t
+    Router1(config)#int g0/1
     Router1(config-if)#standby 1 ip 192.168.1.1 
     Router1(config-if)#standby prio
     Router1(config-if)#standby priority 105
