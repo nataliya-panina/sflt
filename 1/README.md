@@ -17,6 +17,15 @@
     Router1(config-if)#standby preempt
     Router1(config-if)#standby 1 track g0/1
 
+
+    Router0#en
+    Router0#conf t
+    Router0(config)#int g0/1
+    Router0(config-if)# standby version 2
+    Router0(config-if)# standby 1 ip 192.168.1.1
+    Router0(config-if)# standby 1 priority 50
+    Router0(config-if)# do sh standby brief
+
 ## Задание 2
 
     Запустите две виртуальные машины Linux, установите и настройте сервис Keepalived как в лекции, используя пример конфигурационного файла.
