@@ -51,13 +51,13 @@ backend web_servers # секция бэкенд
     sudo systemctl reload haproxy
     curl http://127.0.0.1:8088
 
-![HAproxy]()    
+![HAproxy](https://github.com/nataliya-panina/sflt/blob/main/2/haproxy_round_robin.png)    
 
 Статистика:
 
     http://127.0.0.1:888/stats
     
-![http://127.0.0.1:888/stats]()
+![http://127.0.0.1:888/stats](https://github.com/nataliya-panina/sflt/blob/main/2/haproxy_round_robin_stats.png)
 
 
 ## Задание 2
