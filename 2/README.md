@@ -6,7 +6,20 @@
     Установите и настройте HAProxy, воспользуйтесь материалами к лекции по ссылке
     Настройте балансировку Round-robin на 4 уровне.
     На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
+    
 ## Решение
+
+    mkdir http1
+    mkdir http2
+    cd http1
+    nano index.html -> Server 1 :8888
+    python3 -m http.server 8888 --bind 0.0.0.0
+    То же делаю для второго сервера в папке http2: nano index.html -> Server 2:9999
+    
+Проверка работы:
+    curl http://localhost:8888
+    curl http://localhost:9999
+
 
 
 ## Задание 2
