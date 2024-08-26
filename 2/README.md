@@ -112,9 +112,9 @@ backend web_servers # секция бэкенд
         server s2 127.0.0.1:9999 check weight 3
         server s3 127.0.0.1:5555 check weight 4
 ```
+![Layer_7_1](https://github.com/nataliya-panina/sflt/blob/main/2/haproxy_balance_7.png)
 
-
-![Layer_7](https://github.com/nataliya-panina/sflt/blob/main/2/haproxy_layer7.png)
+![Layer_7_2](https://github.com/nataliya-panina/sflt/blob/main/2/haproxy_layer7.png)
 
 
 # Задания со звёздочкой*
