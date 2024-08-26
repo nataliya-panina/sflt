@@ -26,6 +26,9 @@ HAproxy:
 
     sudo apt install haproxy
     sudo nano /etc/haproxy/haproxy.cfg
+
+В файл конфигурации добавляю:
+
 ```
 listen stats # веб-страница со статистикой 
         bind :888
@@ -48,6 +51,7 @@ backend web_servers # секция бэкенд
         server s1 127.0.0.1:8888 check 
         server s2 127.0.0.1:9999 check
 ```
+
     sudo systemctl reload haproxy
     curl http://127.0.0.1:8088
 
