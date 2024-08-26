@@ -9,10 +9,15 @@
     
 ## Решение
 
+Создаю две папки с файлами index.html:
+
     mkdir http1
     mkdir http2
     cd http1
     nano index.html -> Server 1 :8888
+
+Запускаю простой сервер:
+
     python3 -m http.server 8888 --bind 0.0.0.0
 
 То же делаю для второго сервера в папке http2: nano index.html -> Server 2:9999
@@ -22,7 +27,7 @@
     curl http://localhost:8888
     curl http://localhost:9999
 
-HAproxy:
+Установка и конфигурация HAproxy:
 
     sudo apt install haproxy
     sudo nano /etc/haproxy/haproxy.cfg
@@ -51,6 +56,7 @@ backend web_servers # секция бэкенд
         server s1 127.0.0.1:8888 check 
         server s2 127.0.0.1:9999 check
 ```
+После сохранения файла конфигурации перегружаю haproxy:
 
     sudo systemctl reload haproxy
     curl http://127.0.0.1:8088
@@ -80,6 +86,7 @@ backend web_servers # секция бэкенд
     nano index.html -> Server 3:5555
     python3 -m http.server 5555 --bind 0.0.0.0
 
+Изменяю файл конфигурации:
 ```    
 listen stats # веб-страница со статистикой
         bind :888
@@ -101,10 +108,14 @@ backend web_servers # секция бэкенд
         balance roundrobin
         option httpchk
         http-check send meth GET uri /index.html
-        server s1 127.0.0.1:8888 check 
-        server s2 127.0.0.1:9999 check 
-        server s3 127.0.0.1:5555 check
+        server s1 127.0.0.1:8888 check weight 2
+        server s2 127.0.0.1:9999 check weight 3
+        server s3 127.0.0.1:5555 check weight 4
 ```
+
+
+![Layer_7](https://github.com/nataliya-panina/sflt/blob/main/2/haproxy_layer7.png)
+
 
 # Задания со звёздочкой*
 
