@@ -32,7 +32,7 @@
     
     0    1    *    *    *    rsync -a /home/moi /tmp/backup > /var/log/syslog
 
-![rsync_log](https://github.com/nataliya-panina/sflt/edit/main/3/rsync_syslog.png)
+![rsync_log](https://github.com/nataliya-panina/sflt/blob/main/3/rsync_syslog.png)
 
 
 ![image](https://github.com/user-attachments/assets/45d31c09-dd76-4ce0-95f2-50fa085896f3)
