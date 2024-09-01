@@ -34,6 +34,7 @@
 
 ![rsync_log](https://github.com/nataliya-panina/sflt/blob/main/3/rsync_syslog.png)
 
+![image](https://github.com/user-attachments/assets/9b312680-f31c-4bdd-9ac3-f23a62461333)
 
 ![image](https://github.com/user-attachments/assets/45d31c09-dd76-4ce0-95f2-50fa085896f3)
 
