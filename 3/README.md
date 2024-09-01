@@ -16,7 +16,7 @@
 
     rsync -a --progress --exclude '.*' . /tmp/backup
 
-![rsync](https://github.com/nataliya-panina/sflt/edit/main/3/rsync_test.png)
+![rsync](https://github.com/nataliya-panina/sflt/blob/main/3/rsync_test.png)
 
 ## Задание 2
 
