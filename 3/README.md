@@ -16,6 +16,7 @@
 
     rsync -a --progress --exclude '.*' . /tmp/backup
 
+![rsync](https://github.com/nataliya-panina/sflt/edit/main/3/rsync_test.png)
 
 ## Задание 2
 
@@ -31,7 +32,12 @@
     
     0    1    *    *    *    rsync -a /home/moi /tmp/backup > /var/log/syslog
 
-    
+![rsync](https://github.com/nataliya-panina/sflt/edit/main/3/rsync_syslog.png)
+
+
+![image](https://github.com/user-attachments/assets/45d31c09-dd76-4ce0-95f2-50fa085896f3)
+
+
 # Задания со звёздочкой*
 
 ## Задание 3*
